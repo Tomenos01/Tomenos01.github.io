@@ -1,0 +1,632 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Estilos del Header */
+header {
+    background: linear-gradient(135deg, #166534, #1e7b4e); /* Degradado verde selvático */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Contenedor del encabezado */
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Título principal */
+header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Animación al pasar el mouse */
+header:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Estilo para la sección de introducción */
+#intro {
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd); /* Fondo con degradado sutil */
+    padding: 40px 50px;
+    margin: 40px auto;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: justify;
+}
+
+/* Título de la sección */
+#intro h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #166534; /* Verde selva */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Párrafos */
+#intro p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Resaltar datos importantes */
+#intro p br {
+    font-weight: bold;
+    color: #1e7b4e;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#intro {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si hay poco espacio */
+    gap: 40px; /* Aumenta la separación entre las imágenes */
+    padding: 10px;
+    max-width: 1850px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #f0f8ff, #e3f2fd); /* Suave fondo con degradado */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#gallery:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor de imágenes */
+.image-container {
+    flex: 1; /*Hace que todas las imágenes ocupen el mismo espacio */
+    width: 100%;
+    max-width: 100%; /* Limita el ancho máximo de cada imagen */
+    max-height: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Transición suave al cambiar la imagen */
+    display: inline-block;
+}
+
+.image-container img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; /* Transición suave para el cambio de opacidad y transformación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    opacity: 0.8; /* Reduce la opacidad para que el cambio sea más suave */
+}
+
+
+/* Estilo de las leyendas debajo de las imágenes */
+.image-caption {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    font-style: italic;
+    position: absolute;
+    top: 10px; /* Coloca el texto al fondo de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,1); /* Sombra para mejorar la legibilidad */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+/* Enlace al pie de página */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Sección de Conservacion*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@400;700&display=swap');
+
+#conservacion-section {
+    background: linear-gradient(135deg, #e8f5e9, #f4f4f9); /* Fondo con degradado suave */
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    max-width: 85%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#conservacion-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎯 Encabezados con fuente llamativa */
+#conservacion-section h1 {
+    font-size: 2.8em;
+    color: #2a4d35;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+#conservacion-section h4 {
+    font-size: 2em;
+    color: #024317;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font: bold;
+}
+#conservacion-section h5 {
+    font-size: 1.6em;
+    color: #309c52;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* 📌 Listas con iconos y mejor espaciado */
+#conservacion-section ul {
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+#conservacion-section ul li {
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    list-style: none;
+    position: relative;
+}
+
+#conservacion-section ul li::before {
+    color: #2a4d35;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 📝 Texto más legible y atractivo */
+#conservacion-section p {
+    font-size: 1.5em;
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    color: #212121;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* 🎨 Efecto sutil al pasar el cursor */
+#conservacion-section p:hover {
+    color: #2a4d35;
+}
+
+
+#back-button-conservacion {
+    background-color: #2a4d35;
+    color: white;
+    font-size: 1.8em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#back-button-conservacion:hover {
+    background-color: #3a6a49;
+    transform: scale(1.05);
+}
+
+
+/* Primera lista de Conservacion */
+.textoConservacion1 {
+    text-align: justify;
+    max-width: 80%;
+}
+
+.contenido-amenazas {
+    padding: 20px;
+}
+
+.texto-con-imagen {
+    display: flex;
+    align-items: flex-start; /* Alinea el texto y la imagen en la parte superior */
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+
+.texto {
+    width: 60%; /* Ajusta el ancho del texto */
+}
+
+.texto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    
+}
+
+.texto li {
+    margin-bottom: 10px;
+    
+}
+
+.imagenConservacion1 {
+    width: 45%; /* Ajusta el tamaño de la imagen */
+    max-width: 400px;
+}
+
+.imagenConservacion1 img {
+    width: 350px;
+    height: 300px;
+    
+    border-radius: 10px; /* Añade bordes redondeados a la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 50px;
+}
+
+
+/*Estrategias*/
+.textoConservacion2 {
+    text-align: justify;
+}
+
+.imagenConservacion2 {
+    width: 60%;
+}
+.imagenConservacion2 img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.texto-con-imagen1 {
+    display: flex;
+    align-items: flex-start; /* Alinea el texto y la imagen en la parte superior */
+    justify-content: space-between;
+    gap: 30px;
+}
+.caption-image{
+    margin-top: 1px;
+    font-style: italic;
+ 
+}
+  
+
+/* Estilo general para los botones de regreso */
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto suave al pasar el mouse */
+    margin: 20px; 
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+
+
+
+#back-button-fauna {
+    background-color: #a9600c; 
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+/* Estilo del botón cuando esté oculto */
+button[style="display: none;"] {
+    display: none; 
+}
+
+/* Centrar el botón dentro de su contenedor */
+#back-button {
+    display: flex; /* Usamos flexbox para centrar */
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente */
+    width: 100%; 
+}
+
+/*FLORA*/
+
+/* Contenedor principal para cada item de flora */
+#flora-section {
+    background: linear-gradient(135deg, #e0f2f1, #f4f4f9); /* Fondo con degradado natural */
+    border: 5px solid #2E7D32;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 60px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#flora-section img {
+    border: 5px solid black;
+    border-radius: 10px; 
+    padding: 0px; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 100%; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+#flora-section h1 {
+    font-size: 2.8em; 
+    color: #2E7D32; 
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+    letter-spacing: 2px; 
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #66BB6A;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.flora-section-first {
+
+    font-size: 1.8em; 
+    color: #444; 
+    text-align: left; 
+    line-height: 1.8; 
+    margin: 10px auto; 
+    max-width: 80%; 
+    background-color: rgba(102, 187, 106, 0.1); 
+    padding: 15px; 
+    border-left: 5px solid #66BB6A; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+    
+#flora-section p {
+    font-size: 1.4em; 
+    color: #444; 
+    text-align: justify;
+    line-height: 1.4; 
+    margin: 5px auto; 
+    max-width: 100%; 
+    background-color: rgba(102, 187, 106, 0.1); 
+    display: inline-block;
+    padding: 15px;
+    border-left: 5px solid #66BB6A; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.flora-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+/* Estilo de la imagen */
+.flora-image {
+    flex: 1;
+    max-width: 300px; /* Ajusta el tamaño máximo de las imágenes */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+/* Estilo para las descripciones */
+.flora-description {
+    flex: 2; /* La descripción ocupa más espacio que la imagen */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Mejorando el estilo de las imágenes */
+.flora-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para los títulos de cada flora */
+.flora-description p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Botón de regreso */
+#back-button-flora {
+    background-color: #228B22; /* Verde selva */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+#back-button-flora:hover {
+    background-color: #006400;
+}
+
+
+
+/*FAUNA */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Merriweather:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Raleway:wght@600;800&display=swap');
+
+#fauna-section {
+    background: linear-gradient(135deg, #e3f2fd, #f1f8e9); /* Fondo en tonos suaves */
+    padding: 40px 60px;
+    border: 5px solid;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 90%;
+    text-align: center;
+    display: none; /* Se mantiene oculto hasta que se active */
+    transition: transform 0.3s ease-in-out;
+}
+
+#fauna-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎯 Encabezado llamativo */
+#fauna-section h1 {
+    font-size: 2.5em;
+    color: #5e351b;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #5e1b1b;
+    display: inline-block;
+}
+
+/* 📌 Párrafos estilizados */
+#fauna-section p {
+    font-size: 1.8em;
+    font-family: 'Merriweather', serif;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    background-color: rgba(149, 237, 154, 0.1); 
+    display: inline-block;
+    padding: 15px;
+    border-left: 5px solid #bb6666; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#fauna-section img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin: 15px 0;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🟢 Botón atractivo */
+#back-button-fauna {
+    background-color: #7d2e2e;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 20px;
+    margin: auto;
+}
+
+#back-button-fauna:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+}

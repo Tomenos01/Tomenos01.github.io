@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Latido Verde del Amazonas Peruano</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body onload="loadPage('home')">
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-container">
+            <h1>El latido verde del Amazonas peruano</h1>
+            <p class="subtitle">Biodiversidad y conservación</p>
+        </div>
+    </header>
+
+    <!-- Introducción -->
+    <section id="intro">
+        <h2>Bienvenidos al corazón del Amazonas Peruano</h2>
+        <p> </p>
+        <p>
+            El Amazonas peruano es un ecosistema increíblemente diverso que alberga una de las mayores concentraciones de biodiversidad en el planeta. 
+            Con sus densos y enormes bosques, ríos caudalosos y una increíble variedad de especies, el Amazonas se ha ganado el título de "pulmón del mundo". 
+            Sin embargo, esta riqueza natural está amenazada por actividades humanas, lo que hace que los esfuerzos de conservación sean más urgentes que nunca.
+        </p>
+        <p>
+            La selva amazónica en Perú alberga una increíble diversidad de flora y fauna. 
+            Es el hogar de más de un tercio de todas las especies animales registradas en el mundo, incluyendo el 20% de todas las especies de aves.
+            <br>Este vasto territorio, que abarca más de la mitad del estado peruano, es el hogar de una de las selvas tropicales más grandes y ricas del mundo. 
+            El río Amazonas, que nace en los Andes peruanos, es el río más largo del mundo con una longitud oficial de 6,992 kilómetros, transportando enormes cantidades de agua dulce que lo convierten en una de las zonas más fértiles del planeta.
+        </p>
+        <p>
+            En este trabajo exploraremos las riquezas naturales del Amazonas peruano, haciendo especial énfasis en su fauna, flora y los esfuerzos por preservar su biodiversidad única.
+        </p>
+    </section>
+
+        <!-- Sección de imágenes interactivas -->
+        <section id="gallery">
+            <div class="image-container" onmouseover="changeImage(this)" onmouseout="resetImage(this)" onclick="loadConservacion('conservacion')">
+                <img src="images/Puente1.jpg" alt="Fauna del Amazonas" class="main-image" data-hover="images/rio_guapore.jpg">
+                <p class="image-caption">Conservación</p>
+            </div>
+
+            <div class="image-container" onmouseover="changeImage(this)" onmouseout="resetImage(this)" onclick="loadFauna('fauna')">
+                <img src="https://peruamazontrips.com/wp-content/uploads/2023/11/jaguar_riverside-1536x1000.webp" alt="Flora del Amazonas" class="main-image" data-hover="images/Loro_guacamayo.jpg">
+                <p class="image-caption">Fauna del Amazonas</p>
+            </div>
+
+            <div class="image-container" onmouseover="changeImage(this)" onmouseout="resetImage(this)" onclick="loadFlora('flora')">
+                <img src="images/flora3.jpg" alt="Deforestación en el Amazonas" class="main-image" data-hover="images/flora1.jpg">
+                <p class="image-caption">Flora del Amazonas</p>
+            </div>
+        </section>
+
+        <div id="conservacion-section" class="contenido" style="display: none;">
+            <h1>Conservación del Amazonas</h1>
+            <p>El Amazonas peruano es uno de los ecosistemas más importantes del mundo, no solo por su biodiversidad excepcional y abundante, sino también por su papel en la regulación del clima global y el sustento de numerosas comunidades indígenas. 
+                Sin embargo, la creciente presión humana y el cambio climático amenazan su equilibrio. Por ello, la conservación de esta región es una prioridad tanto a nivel nacional como internacional.</p>
+                
+            <h4>Principales Amenazas a la Amazonía Peruana</h4>
+            <div class="ListaTexto">
+                <div class="texto-con-imagen">
+                    <div class="textoConservacion1">
+                        <ul> <br>
+                            <li><strong>Deforestación:</strong> La tala indiscriminada de árboles para la agricultura, ganadería y las actividades ilegales ha reducido la cobertura forestal y afectado el hábitat de muchas especies. 
+                                Este es un problema significativo para Perú, ya que de acuerdo con el Proyecto Monitoreo de la Amazonía Andina (MAAP), Perú fue el tecer país con mayor deforestación en 2022.
+                            La deforestación es una causa al <b>cambio climático </b>, provocando un aumento en la temperatura y cambios en los patrones de precipitación.
+                             Se ha llegado a observar lluvias de mayor intensidad en periodos cortos, generando inudaciones, y olas de calor térmicas mayores.</li>
+                            <li><strong>Minería ilegal:</strong> La extracción de oro ha generado graves problemas de contaminación, especialmente por el uso de mercurio en los ríos, afectando tanto a la fauna como a las comunidades indígenas.
+                            Esta ha sido extendida por más de 20 ríos en regiones diferentes según un informe de la Fundación para la Conservación y el Desarrollo Sostenible (FCDS) publicado en 2023. 
+                            Además, la minería ilegal ha sido el delito con mayor cantidad de dinero acumulado entre 2013 y 2023, superando incluso al narcotráfico.</li>
+                            <li><strong>Tráfico de especies:</strong> Muchas especies de flora y fauna son capturadas ilegalmente para ser vendidas en mercados nacionales e internacionales.
+                            Las áreas protegidas como parques naturales y reservas forestales están bajo presión extrema debido a la caza furtiva y el tráfico de animales.
+                            Además, suele estar ligado a costumbres y mitos que nacen en comunidades, y que luego provocan que los animales sean objeto de mafias. Por ejemplo, la rana del Titicaca. </li>
+                        </ul>
+                    </div>
+                    <div class="imagenConservacion1">
+                        <img src="images/DeforestacionPeru.jpg" alt="Deforestación Amazonía">
+                        <p class="caption-image">Deforestación: Amazonas peruano</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ListaTexto">
+                    <div class="textoConservacion2">
+                <h4>Estrategias de Conservación en el Amazonas Peruano</h4>
+                <p>Para contrarrestar estas amenazas, diversas estrategias han sido implementadas por el gobierno peruano, organizaciones ambientales y comunidades locales.</p>
+        
+                <h5>1. Creación de Áreas Naturales Protegidas</h5>
+                <p>
+                    Estas estrategias han resultado ser efectivas en la reducción de la deforestación. Estas áreas restringen las actividades económicas, lo que ha generado beneficios económicos.
+                    El SINAPE (Sistema Nacional de Áreas Naturales Protegidas por el Estado) es fundamental para la conservación de los ecosistemas. 
+                    Actualmente existen 46 áreas protegidas que cubren unos 20 millones de hectáreas. 
+                </p>
+                <p>
+                    Las ANPs (Áreas Naturales Protegidas) en la Amazonía peruana incluyen una amplia variedad de categorías, como Parques Nacionales, Reservas Nacionales, Bosques de Protección, Reservas Comunales, Santuarios Nacionales, Santuarios Históricos y Zonas Reservadas.
+                    Dentro de las ANPs hay varias categorias, entre ellas se encuentran la de uso múltiple y estríctas (de uso indirecto).
+                    Las de uso múltiple, que permiten ciertas actividades económicas, han demostrado un impacto similar o mejor en la deforestación que las estríctas. 
+                    Ambos tipos de ANPs son úiles para evitar alzas temporales en la deforestación observadas en bosques no protegidos.
+                </p>
+                <p>
+                    Para mejorar la conservación, se establecen trabajos conjuntos con gobiernos regionales con la finalidad de detener el fraccionamiento del hábitat alrededor de las ANPs, lo que podría llevar a su insostenibilidad a futuro.
+                </p>
+                    <div class="imagenConservacion2">
+                        <img src="images/areasProtegidas.jpg" alt="Áreas Protegidas en Perú">
+                        <p class="caption-image">Zonas protegidas en Perú</p>
+                    </div>
+        
+                <h5>2. Programas de Reforestación</h5>
+                <p>Diversas organizaciones han puesto en marcha iniciativas para recuperar áreas degradadas, promoviendo la siembra de especies nativas y la regeneración natural de los bosques.
+                    Como es el caso de el fundo Campo Verde, en Pucallpa, que ha coseguido una gran reforestación con especies nativas. Actualmente resaltan especies como la caoba y el shihuahuaco.
+                    Este proyecto se inició en Pichanaki en 2009, con la ayuda de AVSF (Agronomes et Véténiares Sans Frontières) del Perú y CO2 Consultores. 
+                    Donde plantaron parcelas de 1 a 10 hectáreas haciendo un total de 305ha. Como consecuencia, ahora cerca de 200 familias son beneficiarias directas.
+                    <br> En la amazonia peruana tambien se ha implementado un programa de agroforestería que consiste en la contribución a recuperar las masas forestales y evitar los ecosistemas.
+                </p>
+        <div class="imagenConservacion2"><img src="images/shihuahuaco.jpg" alt="shihuahuaco"><p class="caption-image"> Shihuahuaco</p></div>
+                <h5>3. Promoción del Ecoturismo</h5>
+                <p>El turismo sostenible se ha convertido en una alternativa económica para las comunidades locales, incentivando la conservación de la biodiversidad y generando ingresos sin dañar el ecosistema.
+                    El Ecoturismo consiste en viajar de forma responsable a áreas naturales, con el objetivo de disfrutar y apreciar la naturaleza mientras se preserva el entorno.
+                    Este tipo de turismo se centra en conocer los ecosistemas naturales.
+                </p>
+        
+                <h5>4. Protección de las Comunidades Indígenas</h5>
+                <p>Las comunidades indígenas han jugado un papel clave en la conservación del Amazonas, debido a su conocimiento ancestral sobre el uso sostenible de los recursos naturales. 
+                    Se han implementado programas para fortalecer sus derechos territoriales y fomentar su participación en proyectos de conservación.
+                Su protección es de gran importancia debido a que estas se enfrentan a numerosas amenazas. 
+                Como hemos visto anteriormente, la deforestación es un problema muy serio en el Amazonas Peruano, la cual afecta directamente a estas poblaciones indígenas, ejerciendo presión por proyectos forestales, extracción forestal, minería y transporte.
+                </p>
+                <div class="imagenConservacion2"><img src="images/indigenasPeru.jpg" alt="Indigenas"><p class="caption-image"> Puablo indígena</p></div>
+                <p>
+                    The Nature Conservancy (TNC) trabaja con las comunidades para intentar minimizar daños, ya que desafortunadamente, el daño es inevitable. 
+                    Las tierras y territorios de estos pueblos ocupan aporximadamente el 18% de la superficie de la cuenca del Amazonas, unos 10.5 millones de hectáreas.
+                    <br>
+                    Existe un plan biorregional propuesto por organizaciones indígenas para proteger el 80% de la Amazonia en Perú y Ecuador para 2025, una superficie de 35 millones de hectáreas de selva tropical, o, dicho en otros términos, 35 millones de campos de fútbol.
+                </p>
+                <p>
+                    En la Amazonia Peruana viven alrededor de 50 pueblos indígenas. La constitución peruana reconoce los derechos territoriales que estos tienen e implementaron leyes para proteger sus tierras ante la deforestación y minería ilegal entre otras muchas cosas.
+                    Estas comunidades estan protegidas por, no solo el gobierno peruano, sino organizaciones no gubernamentales y organismos internacionales con proyectos que incluyen el apoyo a la autonomía territorial y procesos de toma de decisiones.
+                    Estos pueblos, además son participantes muy activos en la conservación al ecosistema y biodiversidad de la Amazonía con prácticas sostenibles e iniciativas de conservación y apoyo a las ANPs.
+                </p>
+                <p>La protección de estas comunidades no es solo una cuestión de humanidad y justicia, sino que también de conservación ambiental de ecosistemas y biodiversidad.</p>
+                </div>
+            </div>
+    
+            <button id="back-button-conservacion" onclick="goBackConservacion()">Volver</button>  
+        </div>
+
+       <div id="flora-section" class="contenido" style="display: none;">
+    <h1>Flora del Amazonas</h1>
+    <h4 class="flora-section-first">El Amazonas alberga una increíble diversidad de especies vegetales. Aquí, algunas de las más destacadas:</h4>
+
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/OrquideaAmazonas.jpg" alt="Orquídea Amazonas">
+        </div>
+        <div class="flora-description">
+            <p><strong>Orquídea del Amazonas</strong>: Esta flor es símbolo de la biodiversidad en la selva tropical del Amazonas. Es de tamaño pequeño que prefiere clima cálido.</p>
+            <p><strong>Fun fact</strong>: Las orquídeas del Amazonas son conocidas por su diversidad y belleza, con más de 30,000 especies identificadas.</p>
+        </div>
+    </div>
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/plantaAcuatica.jpg" alt="Lirios gigantes">
+        </div>
+        <div class="flora-description">
+            <p><strong>Lirios gigantes</strong>: Son plantas con hojas flotantes que pueden alcanzar hasta 3 metros de diámetro.
+            Su esructura le permite soportar el peso de un niño pequeño. Florecen pétalos blancos que se tornan rosados al día siguiente.</p>
+            <p><strong>Fun fact</strong>: Solo duran 48h. La primera noche emite un aroma para atraer escarabajos polinizadores, se cierran para atraparlos hasta la noche siguiente.
+                Cuando cambian de color los liberan.</p>
+        </div>
+    </div>
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/bastonDelEmperador.jpg" alt="Baston del emperador">
+        </div>
+        <div class="flora-description">
+            <p><strong>Bastón del emperador</strong>: Flor tropical de color rojo intenso crece en forma de cono y es una de las más llamativas en el amazonas. 
+                Se puede usar como medicina tradicional y ornamenación.</p>
+            <p><strong>Fun fact</strong>: Lo que vemos son brácteas, no una flor. Son estructuras modificadas de la planta.
+                Las verdaderas flores son pequeñas y ocultas dentro de la inflorescencia.</p>
+        </div>
+    </div>
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/piñitaRoja.jpg" alt="Piñita roja">
+        </div>
+        <div class="flora-description">
+            <p><strong>Piñita roja</strong>: Mirando la imagen se puede observar como tiene un gran parecido a una piña pero en miniatura con hojas espinosas y una tonalidad roja brillante.</p>
+            <p><strong>Fun fact</strong>: Esta planta crece sobre otras plantas pero sin dañarlas. Puede absorber agua y nutrientes del aire y la lluvia, ayudando a mantener la humedad del ecosistema.</p>
+        </div>
+    </div>
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/heliconia.jpg" alt="Heliconia">
+        </div>
+        <div class="flora-description">
+            <p><strong>Heliconia</strong>: Es una planta con flores colgantes en forma de pico de color roja, naranja y amarilla. 
+            Esta forma tan única llama la atención de los colobríes, que son sus principales polinizadores.</p>
+            <p><strong>Fun fact</strong>: Se le conoce como "pico de loro" por la forma de sus flores. Además, sus hojas son similares a las del banano, ya que ambas plantas pertenecen a la misma familia.</p>
+        </div>
+    </div>
+
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/orejaDeElefante.jpg" alt="Oreja de elefante">
+        </div>
+        <div class="flora-description">
+            <p><strong>oreja de elefante</strong>: Tiene hojas enormes y en forma de corazón, parecidas a orejas de elefante.
+                Crece sobre suelos húmedos y es muy usada en la cocina amazónica ya que las raíces son comestibles.</p>
+            <p><strong>Fun fact</strong>: Las hojas contienen cristales de oxolato de calcio, una sustancia tóxica. 
+            Produce irritación si se toca con la mano desnuda o se come cruda.</p>
+        </div>
+    </div>
+
+    <div class="flora-item">
+        <div class="flora-image">
+            <img src="images/ceibaArbolAmazonas.jpg" alt="Árbol de Ceiba">
+        </div>
+        <div class="flora-description">
+            <p><strong>Ceiba</strong>: Uno de los árboles más grandes y emblemáticos de la selva amazónica. Puede llegar a medir hasta 70 metros de altura.
+            Cuando es joven presenta espinas. </p>
+            <p><strong>Fun fact</strong>: Considerado sagrado por muchas culturas indígenas, quienes creen que conecta la Tierra con el cielo.</p>
+        </div>
+    </div>
+
+    <button id="back-button-flora" onclick="goBackFlora()">Volver</button>
+</div>
+
+
+        <div id="fauna-section" class="contenido" style="display: none;">
+            <h1>Fauna del Amazonas</h1>
+            <p>La Amazonía peruana es una de las áreas con mayor biodiversidad y endemismos del planeta, albergando una gran variedad de especies animales. Aquí, algunas de las más destacadas:</p>
+            
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/colaAmarilla.jpg" alt="Mono choro de cola amarilla">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Mono choro de cola amarilla</strong>: Mono endémico de Perú, se caracteriza por su cola amarilla y su denso pelaje marrón oscuro.
+                    Viven en bosques de los Andes y se encuentran en peligro de extinción. </p>
+                    <p><strong>Fun fact</strong>: Su cola es tan fuerte que puede colgarse en árboles de ella sin usar las manos.</p>
+                </div>
+            </div>
+
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/capybara.jpg" alt="Capybara">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Capybara</strong>: Es el roedor más grande del mundo, habita en zonas húmedas y pantanosas.
+                        Es un animal extremadamente social y pasa mucho tiempo en el agua para refrescarse y escapar de depredadores. </p>
+                    <p><strong>Fun fact</strong>: Son tan pacíficos que otras especies como aves y monos los llegan a usar como transporte subiéndose a su lomo.</p>
+                </div>
+            </div>
+
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/boaAmarilla.jpg" alt="Boa amarilla">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Boa amarilla</strong>: Es una serpiente constrictora no venenosa que habita en ríos y pantanos.
+                        Es una excelente nadadora y se camufla perfectamente entre la vegetación mientras caza. </p>
+                    <p><strong>Fun fact</strong>: Aguanta bajo el agua hasta más de 10 minutos, ello lo convierte en una gran cazadora sigilosa y eficiente en medios acuáticos.</p>
+                </div>
+            </div>
+
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/ranaCampana.jpg" alt="Rana venenosa de campana">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Rana venenosa de campana</strong>: Famosa por su piel de colores que advierte a sus depredadores de la toxicidad de su piel.
+                    Este veneno proviene de los insectos y hormigas que consume en la selva. </p>
+                    <p><strong>Fun fact</strong>: No hay dos con las mismas manchas y colores. Los científicos las identifican gracias a esta caracterísitca
+                    como si de huellas dactilares se tratase.</p>
+                </div>
+            </div>
+
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/loroGuacamayo.jpg" alt="Guacamayos coloridos de la torre">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Guacamayos coloridos de la torre</strong>: Loros con plumajes llamativos de color rojo, verde y amarillo.
+                    Son muy inteligentes y sociales, conocidas por sus fuertes llamadas y su longevidad. </p>
+                    <p><strong>Fun fact</strong>: Imitan sonidos con mucha facilidad, es capaz de aprender palabras humanas si se cría en
+                    cautiverio. Algunas viven hasta 80 años, con lo que podría compañar a su dueño toda la vida.</p>
+                </div>
+            </div>
+
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/JaguarSelva.jpg" alt="Jaguar">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Jaguar</strong>: Es el felino más grande de América y el tercero del mundo. Es solitario y poderoso, conocido 
+                    por su habilidad para nadar y acechar a sus presas en la selva. </p>
+                    <p><strong>Fun fact</strong>: Su mordida es la más fuerte de los felinos, es capaz de perforar el caparazón de una tortuga
+                    o el cráneo de su presa de un mordisco.</p>
+                </div>
+            </div>
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/DelfinRIo.jpg" alt="Bufeo negro">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Bufeo negro</strong>: Es el delfín del amazonas. Es una variante del delfín rosado. Ágil nadador que 
+                        se mueve entre los ríos ayudando a mantener el equilibrio ecológico del ecosistema acuático. </p>
+                    <p><strong>Fun fact</strong>: Según las leyendas amazónicas, se transforma en hombre atractivo por las noches para seducir a humanos.</p>
+                </div>
+            </div>
+
+            <div class="fauna-item">
+                <div class="fauna-image">
+                    <img src="images/AguilaHArpia.jpg" alt="Águila harpía">
+                </div>
+                <div class="fauna-description">
+                    <p><strong>Águila harpía</strong>: Es una de las águilas mas grandes y poderosas del mundo, sus garras pueden
+                        ser más grandes que las de un oso pardo. Caza monos, perezosos y otros mamíferos en lo alto del dosel del Amazonas. </p>
+                    <p><strong>Fun fact</strong>: Sus patas pueden ejercer una presión de 50kg, lo suficiente como para levantar a un perezoso adulto
+                        en pleno vuelo.</p>
+                </div>
+            </div>
+        
+            <button id="back-button-fauna" onclick="goBackFauna()">Volver</button>
+        </div>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p> Trabajo realizado por: Tomás Orejas.</p>
+    </footer>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
+
