@@ -465,7 +465,7 @@ button[style="display: none;"] {
     color: #444; 
     text-align: left; 
     line-height: 1.8; 
-    margin: 10px auto; 
+    margin-bottom: 50px; 
     max-width: 80%; 
     background-color: rgba(102, 187, 106, 0.1); 
     padding: 15px; 
